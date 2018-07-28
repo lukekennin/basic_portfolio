@@ -1,0 +1,29 @@
+#bodypage {
+    margin:0px;
+    width:960;
+    text-align: center;
+}
+
+#top {
+    height:100px;
+}
+
+#bar {
+    
+}
+
+#middle {
+    /* width:960px; */
+}
+
+#name {
+    display: inline-block;
+    position: relative;
+    float: left;
+}
+
+#navbar {
+    display: inline-block;
+    position: relative;
+    float: right;
+}
