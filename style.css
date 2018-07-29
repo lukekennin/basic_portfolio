@@ -44,6 +44,10 @@ a:link {
     color: gray;
   }
 
+a:visited {
+	color: gray;
+}
+
 .hover:hover {
     color:red;
 }
