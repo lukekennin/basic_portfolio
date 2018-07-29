@@ -93,6 +93,7 @@ a:visited {
     height:100px;
     width:auto;
     font-size:18pt;
+    font-weight: bold;
     color: darkolivegreen;
     border-bottom: 3px solid darkolivegreen;
 }
