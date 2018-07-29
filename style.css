@@ -1,10 +1,10 @@
-#bodypage {
+body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 0px;
     padding: 0px;
 }
 
-#top {
+#header {
     height:100px;
     border-bottom: 3px solid darkolivegreen;
     background-color: white;
@@ -13,6 +13,11 @@
 .center {
     padding: 40px 0;
     text-align: center;
+}
+
+.middle {
+    padding: 40px 0;
+    text-indent: 50px;
 }
 
 #bar {
@@ -25,7 +30,8 @@
 #name {
     height:100px;
     width:170px;
-    font-size: 18pt;
+    font-size: 16pt;
+    font-weight: bold;
     margin: left;
     background-color: darkolivegreen;
     color: white;
@@ -42,7 +48,7 @@ a:link {
     color:red;
 }
 
-#middle {
+#center {
     height:800px;
     width:auto;
     background-color: gray;
@@ -58,7 +64,7 @@ a:link {
     padding: 50px;
 }
 
-#bottom {
+#footer {
     height:100px;
     width:auto;
     position: relative;
@@ -76,12 +82,41 @@ a:link {
     margin: auto;
     width: 50%;
     background-color: white;
+    clear: both;
 }
 
 #title {
     height:100px;
-    width:200px;
+    width:auto;
     font-size:18pt;
     color: darkolivegreen;
-    background-color: yellow;
+    border-bottom: 3px solid darkolivegreen;
+}
+
+img {
+    margin:50px;
+    border: black solid 5px;
+    position: relative;
+    float: left;
+}
+
+#content {
+    height:490px;
+    width:auto;
+}
+
+#row1 {
+    margin:auto;
+    height:auto;
+    width:95%;
+    position: relative;
+    float: left;
+}
+
+#row2 { 
+    margin:auto;
+    height:auto;
+    width:95%;
+    position: relative;
+    bottom:0;
 }
