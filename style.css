@@ -125,3 +125,33 @@ img {
     position: relative;
     bottom:0;
 }
+
+@media only screen and (max-width: 930px) {
+    #aboutMe {
+        height:auto;
+        width:auto;
+    }
+
+    #navbar {
+        color:white;
+        height:auto;
+        width:auto;
+    }
+    a:link {
+        text-decoration: none!important;
+        color: white;
+      }
+    a:visited {
+        color :white;
+    }
+    #aboutMe {
+        border: none;
+    }
+    #title {
+        text-align: center;
+    }
+    #center {
+        height:auto;
+        width:auto;
+    }
+}
