@@ -6,6 +6,7 @@ body {
 
 #header {
     height:100px;
+    width:auto;
     border-bottom: 3px solid darkolivegreen;
     background-color: white;
 }
@@ -19,7 +20,6 @@ body {
     padding: 40px 0;
     text-indent: 50px;
 }
-
 #bar {
     height:100px;
     width:960px;
@@ -91,11 +91,12 @@ a:visited {
 
 #title {
     height:100px;
-    width:auto;
+    width:100%;
     font-size:18pt;
     font-weight: bold;
     color: darkolivegreen;
     border-bottom: 3px solid darkolivegreen;
+    text-align: left;
 }
 
 img {
@@ -131,11 +132,13 @@ img {
         height:auto;
         width:auto;
     }
-
     #navbar {
         color:white;
         height:auto;
-        width:auto;
+        width:100%;
+        padding:none; 
+        text-align: center;
+        float: left;
     }
     a:link {
         text-decoration: none!important;
@@ -146,12 +149,44 @@ img {
     }
     #aboutMe {
         border: none;
+        height:auto;
+        width: auto;
+        top:0;
     }
     #title {
+        height:100px;
+        width:100%;
+        font-size:18pt;
+        font-weight: bold;
+        color: darkolivegreen;
+        border-bottom: 3px solid darkolivegreen;
         text-align: center;
     }
     #center {
         height:auto;
         width:auto;
+        text-align: center;
     }
-}
+    #name {
+        height:auto;
+        width:auto;
+        font-size: 16pt;
+        font-weight: bold;
+        margin: none;
+        background-color: darkolivegreen;
+        color: white;
+        text-align: center;
+        float: none;
+    }
+    #bar {
+        height:100px;
+        width:auto;
+        margin: auto;
+        text-align: center;
+    }
+   #header {
+    height:100px;
+    width:auto;
+    background-color: white;
+    }
+}  
