@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>psychic game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" />
+</head>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+</style>
+
+<body>
+    <h1>psychic game</h1>
+    <br>
+    <h3>guess what letter I'm thinking of...</h3>
+    <br>
+    <h3 id="wins">wins:</h3>
+    <br>
+    <h3 id="losses">losses:</h3>
+    <br>
+    <h3 id="guessesLeft">guesses left:</h3>
+    <br>
+    <h3 id="lettersGuessed">letters guessed:</h3>
+
+    <script type="text/javascript">
+
+        function resetGame() {
+            guesses = 10;
+            chosenLetter = [];
+            psychicLetter = letters[Math.floor(Math.random() * letters.length)];
+        }
+
+        function updateLosses() {
+            document.querySelector("#losses").innerHTML = "losses: " + losses;
+        }
+        function updateWins() {
+            document.querySelector("#wins").innerHTML = "wins: " + wins;
+        }
+        function updateguessesLeft() {
+            document.querySelector("#guessesLeft").innerHTML = "guesses left: " + guesses;
+        }
+        function updateLettersGuessed() {
+            document.querySelector("#lettersGuessed").innerHTML = "letters guessed: " + chosenLetter;
+        }
+
+        var letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p",
+            "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+        var wins = 0;
+        var losses = 0;
+
+        resetGame();
+
+        document.addEventListener('keydown', (event) => {
+
+            if (event.which < 65 || event.which > 90) {
+                return false;
+            }
+            var userInput = event.key;
+            console.log('User: ' + userInput);
+
+            console.log("Computer Guess: " + psychicLetter);
+
+            if (guesses === 1) {
+                alert("you lost");
+                losses++;
+                console.log("Current Losses: " + losses);
+                updateLosses();
+                resetGame();
+
+            } else {
+                chosenLetter.push(userInput);
+                console.log("Chosen Letters: (below)");
+                console.log(chosenLetter);
+                guesses--;
+                console.log("Guesses Left: " + guesses);
+                updateLettersGuessed();
+                updateguessesLeft();
+            }
+            if (psychicLetter === userInput) {
+                wins++;
+                alert("you guessed right")
+                console.log("Wins: " + wins);
+                updateWins();
+                resetGame();
+            }
+        });
+    </script>
+</body>
+
+</html>
