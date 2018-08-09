@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src='https://code.jquery.com/jquery-3.3.1.min.js' integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8='
+        crossorigin='anonymous'></script>
+
+</head>
+
+<body>
+    <h1>crystals collector</h1>
+    <div class="info">
+        <p>You will be given a random number at the start of the game.</p>
+        <br>
+        <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+        <br>
+        <p>You win the game by matching your total score to a random number. The game is lost if your total score goes above
+            the randomly generated number.</p>
+        <br>
+        <p>The value of each crystal is hidden until you click on it.</p>
+        <br>
+        <p>Each time the game starts, the value of each crystal changes.</p>
+    </div>
+    <div>
+        <div class="center">
+            <div>
+                <p id=numNeeded>Number Needed:</p>
+            </div>
+            <div>
+                <p id="wins">Wins:</p>
+                <p id="losses">Losses:</p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="gems">
+            <div>
+                <img id="gem1" src="assets/Screen Shot 2018-08-06 at 10.33.11 PM.png">
+            </div>
+            <div>
+                <img id="gem2" src="assets/Screen Shot 2018-08-06 at 10.33.18 PM.png">
+            </div>
+            <div>
+                <img id="gem3" src="assets/Screen Shot 2018-08-06 at 10.33.27 PM.png">
+            </div>
+            <div>
+                <img id="gem4" src="assets/Screen Shot 2018-08-06 at 10.33.33 PM.png">
+            </div>
+        </div>
+    </div>
+    <div class="scoreboard">
+        <div>
+            <div class="totalIs">
+                <p>Your total score is:</p>
+            </div>
+        </div>
+        <div id="score">
+
+        </div>
+    </div>
+    <script src="logic.js"></script>
+</body>
+
+</html>
