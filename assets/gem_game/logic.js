@@ -29,13 +29,14 @@ function reset() {
 
     $('#numNeeded').text("Number Needed: " + numNeeded);
     console.log("Random Number Generated: " + numNeeded);
-
     $("#score").text(totalScore);
     $("#wins").text("Wins: " + wins);
     $("#losses").text("Losses: " + losses);
 
 }
 
+$('#numNeeded').text("Number Needed: " + numNeeded);
+console.log("Random Number Generated: " + numNeeded);
 $("#score").text(totalScore);
 $("#wins").text("Wins: " + wins);
 $("#losses").text("Losses: " + losses);
@@ -45,12 +46,12 @@ $("#gem1").on("click", function () {
     console.log("Updated Score: " + totalScore);
     $("#score").text(totalScore);
     if (totalScore === numNeeded) {
-        reset();
         wins++;
+        reset();
     }
     else if (totalScore > numNeeded) {
-        reset();
         losses++;
+        reset();
     }
 })
 
@@ -59,12 +60,12 @@ $("#gem2").on("click", function () {
     console.log("Updated Score: " + totalScore);
     $("#score").text(totalScore);
     if (totalScore === numNeeded) {
-        reset();
         wins++;
+        reset();
     }
     else if (totalScore > numNeeded) {
-        reset();
         losses++;
+        reset();
     }
 })
 
@@ -73,12 +74,12 @@ $("#gem3").on("click", function () {
     console.log("Updated Score: " + totalScore);
     $("#score").text(totalScore);
     if (totalScore === numNeeded) {
-        reset();
         wins++;
+        reset();
     }
     else if (totalScore > numNeeded) {
-        reset();
         losses++;
+        reset();
     }
 })
 
@@ -87,11 +88,11 @@ $("#gem4").on("click", function () {
     console.log("Updated Score: " + totalScore);
     $("#score").text(totalScore);
     if (totalScore === numNeeded) {
-        reset();
         wins++;
+        reset();
     }
     else if (totalScore > numNeeded) {
-        reset();
         losses++;
+        reset();
     }
 })
