@@ -1,0 +1,10 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.main-area {
+    margin:auto;
+    height: auto;
+    width: 720px;
+    background-color: grey;
+    border: 10px solid black;
+}
