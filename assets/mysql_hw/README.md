@@ -2,7 +2,7 @@
 application runs off a command line prompt. utilizies npm packages: inquirer, mysql, and cli-table. application allows the user to select items only from the defined customer parameters (read database).
 
 # mySQL setup
-mySQL should already be setup. run the bamazon.sql in a sql client to setup the database.
+clone repo, run the bamazon.sql in a sql client to setup the database.
 
 #customer
 
